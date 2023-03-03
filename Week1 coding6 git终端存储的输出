@@ -1,0 +1,103 @@
+Last login: Sat Jan 28 14:36:33 on ttys001
+(base) rex@OCCHOCOREXLESSdeMacBook-Air ~ % conda deactivate
+
+rex@OCCHOCOREXLESSdeMacBook-Air ~ % git
+
+
+rex@OCCHOCOREXLESSdeMacBook-Air ~ % cd /Users/rex/Desktop/Coding6 
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git init                  
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint: 	git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint: 	git branch -m <name>
+Initialized empty Git repository in /Users/rex/Desktop/Coding6/.git/
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	nice.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git add -A    # add all
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   nice.js
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git commit -m 'Initial Commit'
+[master (root-commit) 9e19a6e] Initial Commit
+ Committer: OCCHOCOREXLESS <rex@OCCHOCOREXLESSdeMacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ create mode 100644 nice.js
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git status                    
+On branch master
+nothing to commit, working tree clean
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git reset --hard HEAD
+HEAD is now at 9e19a6e Initial Commit
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git add -A
+                    
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git commit -m 'the good stuff'
+[master d0c811a] the good stuff
+ Committer: OCCHOCOREXLESS <rex@OCCHOCOREXLESSdeMacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git log
+commit d0c811a5cf80cbadc8eaa542eae5888de324246c (HEAD -> master)
+Author: OCCHOCOREXLESS <rex@OCCHOCOREXLESSdeMacBook-Air.local>
+Date:   Fri Feb 17 14:43:35 2023 +0000
+
+    the good stuff
+
+commit 9e19a6e4d345dfe0003ebf4015bf6d8fc5caa52c
+Author: OCCHOCOREXLESS <rex@OCCHOCOREXLESSdeMacBook-Air.local>
+Date:   Fri Feb 17 14:32:24 2023 +0000
+
+    Initial Commit
+
+rex@OCCHOCOREXLESSdeMacBook-Air Coding6 % git reset --hard 9e19a6e4d345dfe0003ebf4015bf6d8fc5caa52c
+HEAD is now at 9e19a6e Initial Commit
